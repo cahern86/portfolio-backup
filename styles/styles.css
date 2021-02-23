@@ -1,10 +1,10 @@
 * { box-sizing: border-box; }
 
 .header {
-  font-size: 50px;
+  font-size: 300%;
   background-color: #fc4a1a;
   height: 2rem;
-  padding: 5rem 0rem 8rem 2rem;
+  padding: 3rem 0rem 11rem 2rem;
   font-family: 'Rock Salt', cursive;
 }
 
