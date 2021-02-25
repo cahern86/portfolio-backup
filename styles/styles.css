@@ -31,6 +31,10 @@ a {
   text-decoration: none;
 }
 
+a:visited {
+  color:purple;
+}
+
 h1 {
   font-size: 32px;
   padding-left: 2rem;
@@ -68,8 +72,8 @@ p {
   }
 
 .card {
-    flex: 10 0 200px;
-    margin: 18px;
+    flex: 10 10 10px;
+    margin: 10px;
     border: 1px solid #ccc;
     box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
 }
@@ -80,7 +84,7 @@ p {
 }
 
 .card .text {
-  padding: 0 20px 20px;
+  padding: 20px 20px;
 }
 
 .card .text > button {
@@ -89,7 +93,6 @@ p {
   color: white;
   padding: 1rem 1rem;
   width: 100%;
-
 }
 
 .second-cards {
@@ -130,3 +133,5 @@ p {
   flex-flow: wrap row;
   justify-content: space-around;
 }
+
+footer ul li:nth-child(odd) {font-size: 25px;}
