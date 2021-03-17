@@ -117,12 +117,94 @@ p {
   margin-right: 8rem;
 }
 
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  box-sizing: border-box;
+  display: block;
+  margin: 1rem;
+}
+
+.form {
+  padding-left: 1rem;
+  background-color: #4abdac;
+  float: right;
+}
+
+fieldset {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+}
+
+
+label {
+  padding-left: 1rem;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+}
+
+.checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkbox label {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-top: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.checkmark  {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+.checkbox input:checked ~ .checkmark {
+  background-color: blue;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkmark:after {
+  display: block;
+}
+
+.checkbox .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
 
 .footer-main {
   font-size: 16px;
   background-color: #dfdce3;
   padding: 5rem;
   margin-top: 2rem;
+  clear: right;
 }
 
 .footer-main > ul {
